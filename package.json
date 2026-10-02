@@ -1,0 +1,31 @@
+{
+  "name": "pi-local-classifier",
+  "version": "0.1.0",
+  "description": "Pi extension that registers localhost typed-decision backends as native Pi classifiers",
+  "author": "Jesse Wise",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jwise7/pi-local-classifier.git"
+  },
+  "homepage": "https://github.com/jwise7/pi-local-classifier",
+  "bugs": {
+    "url": "https://github.com/jwise7/pi-local-classifier/issues"
+  },
+  "keywords": ["pi-package", "pi", "classifier", "decision-model", "coding-agent"],
+  "publishConfig": {
+    "access": "public"
+  },
+  "pi": {
+    "extensions": ["./extensions"]
+  },
+  "files": ["extensions/", "README.md", "CHANGELOG.md", "LICENSE"],
+  "scripts": {
+    "test": "node --test tests/local-classifier/mapping.test.mjs"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-tui": "*"
+  }
+}
